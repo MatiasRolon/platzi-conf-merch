@@ -10,7 +10,7 @@ const Success = () => {
     const location = useGoogleAddress(buyer[0].address);
     return (
         <div className="Success">
-            <div className="Success-content">
+            <div className="Success-content"> 
                 <h2> {buyer[0].name}, gracias por tu compra</h2>
                 <span> Tu pedido llegará en 3 dias a tu dirección:</span>
                 <div className="Success-map">
