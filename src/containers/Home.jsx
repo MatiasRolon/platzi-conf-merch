@@ -7,7 +7,7 @@ const Home = () => {
     <>
         <Helmet>
             <title> Platzi Conf Merch - Productos </title>  
-        </Helmet>
+        </Helmet> 
         <Products />
     </>
     )

@@ -10,7 +10,7 @@ const Payment = () => {
     const history = useHistory();
 
     const paypalOptions = {
-        clientId: 'AShBeT_IISa_zZy5ArUq03bqz3tF-BbW_TBXVmL8O4ENZSRBMuidpA8cK4nLtCcFJKMdwDbo5ZtYleds',
+        clientId: "AShBeT_IISa_zZy5ArUq03bqz3tF-BbW_TBXVmL8O4ENZSRBMuidpA8cK4nLtCcFJKMdwDbo5ZtYleds",
         intent: 'capture',
         currency: 'EUR'
     }
@@ -40,7 +40,9 @@ const Payment = () => {
     }
 
     return (
+    
         <div className="Payment">
+                
             <div className="Payment-content">
                 <h3> Resumen del pedido: </h3>
                     {cart.map((item) => (

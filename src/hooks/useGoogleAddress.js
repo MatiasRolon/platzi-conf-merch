@@ -4,7 +4,7 @@ import { MapContext } from '@react-google-maps/api';
 
 const useGoogleAddress = address => {
     const [map, setMap] = useState({});
-    const API = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=AIzaSyDbx6s-4T7VjTLTVNLj6Ekkj3wxgOH1AZ`
+    const API = `${process.env.GEODECODE_API_URL}json?address=${address}&key=${process.env.GOOGLE_MAPS_API_KEY}`
 
     useEffect( async () => {
         const response = await axios(API);
